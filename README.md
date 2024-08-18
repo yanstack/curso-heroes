@@ -8,3 +8,5 @@ Pueden hacer lo que quieran...
 
 ### GitHub
 Cambios realizados en GitHub.com
+
+[![CI](https://github.com/yanstack/curso-heroes/actions/workflows/basic.yml/badge.svg)](https://github.com/yanstack/curso-heroes/actions/workflows/basic.yml)
