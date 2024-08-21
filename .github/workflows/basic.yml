@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     # Steps are a sequence of tasks executed as part of a job
     steps:
       # Checks out or downloads repository under $GITHUB_WORKSPACE   
