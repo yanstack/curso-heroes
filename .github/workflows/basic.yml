@@ -4,19 +4,22 @@ name: CI
 # Controls when the wrokflow will run
 
 on: 
+ issues:
+  types:
+   - opened
 #  push: 
  #   branches: ["main"]
  # pull_request:
   #  branches: ["main"]
   # Allows you to run this workflow manually from the actions tab
-  workflow_dispatch: 
-    inputs:
-      title:
-        required: true
-        type: string
-      body:
-        required: true
-        type: string
+#  workflow_dispatch: 
+ #   inputs:
+  #    title:
+   #     required: true
+    #    type: string
+     # body:
+       # required: true
+        #type: string
 # A workflow run is made up of one or more jobs
 run-name: Pipeline run by @${{ github.actor }}
 jobs:  
@@ -36,8 +39,6 @@ jobs:
          run: |
            echo Add other actions to build,
            echo test, and deploy your project.
-           echo ${{ inputs.title }}
-           echo ${{ inputs.body }}
 
 
 
