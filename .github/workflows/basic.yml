@@ -3,10 +3,20 @@ name: CI
 
 # Controls when the wrokflow will run
 
-on: 
- issues:
-  types:
-   - opened
+on:
+ push:
+  paths:
+   - '**.md'
+ # * solo archivos en la raiz, ** archivos en cada directorio desde la raiz hacia abajo
+ #issues: 
+  #types:
+   #- opened
+ #push:
+  #branches: o branches-ignore for ignore branches
+   #- 'prod/**'
+   #- '!prod/**-beta for to ignore as well
+  #tags: o tags-ignore for ingore branches
+   #- 'rc*'
 #  push: 
  #   branches: ["main"]
  # pull_request:
