@@ -7,9 +7,10 @@ on:
  push:
   paths:
    - '**.md'
+   - '!historia/**'
  # * solo archivos en la raiz, ** archivos en cada directorio desde la raiz hacia abajo
-  paths-ignore: # for ignore paths
-   - 'historia/**'
+  #paths-ignore: # for ignore paths, but only if paths event does not exists
+   #- 'historia/**'
  #issues: 
   #types:
    #- opened
