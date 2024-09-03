@@ -8,6 +8,8 @@ on:
   paths:
    - '**.md'
  # * solo archivos en la raiz, ** archivos en cada directorio desde la raiz hacia abajo
+  paths-ignore: # for ignore paths
+   - 'historia/**'
  #issues: 
   #types:
    #- opened
