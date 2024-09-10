@@ -49,10 +49,7 @@ jobs:
          run: echo Hello, World!
       # Runs a seto of commands using the runners shell
       -  name: Run a multi-line script
-         run: |
-           echo Add other actions to build,
-           echo test, and deploy your project correctly.
-           echo '${{ github.event.head_commit.message }}'
+         run: echo ${{ github.event.head_commit.message }}
 
 
 
