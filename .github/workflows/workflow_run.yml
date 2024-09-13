@@ -1,13 +1,14 @@
 name: workflow_run
 on:
-  workflow_run:
-    workflows: ["CI"]
-    types: [completed]
-    branches:
-      -  'main'
+  pull_request_target:
+ # workflow_run:
+  #  workflows: ["CI"]
+   # types: [completed]
+    #branches:
+     # -  'main'
 jobs:
   print_message:
     runs-on: ubuntu-latest
     steps:
       - name: Print a message on the console
-        run: echo 'hello world'
+        run: echo 'hello world' > $HELLO
