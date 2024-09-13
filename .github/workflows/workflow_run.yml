@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a message on the console
-        run: echo 'hello world' > $HELLO
+        run: $HELLO="Hello wrold"
